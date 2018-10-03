@@ -1,0 +1,8 @@
+<ul class="kings">
+    <li *ngFor="let king of kings"
+    (click)="onSelect(king)" [class.selected]="king === selectedKing">
+    <span class="badge">{{king.id}}</span>
+    {{king.name}}
+</li>
+</ul>
+<app-king-detail [king]="selectedKing"></app-king-detail>
