@@ -1,7 +1,7 @@
 /* HeroesComponent's private CSS styles */
 .selected {
-  background-color: #CFD8DC !important;
-  color: white;
+  background-color: #FECB00 !important;
+  color: #002147 !important;
 }
 .kings {
   margin: 0 0 2em 0;
@@ -13,20 +13,17 @@
   cursor: pointer;
   position: relative;
   left: 0;
-  background-color: #EEE;
+  background-color: #002147;
   margin: .5em;
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
-}
-.kings li.selected:hover {
-  background-color: #BBD8DC !important;
-  color: white;
+  color: white; 
+  font-weight: 500; 
 }
 .kings li:hover {
-  color: #607D8B;
-  background-color: #DDD;
   left: .1em;
+  height: 1.65em;
 }
 .kings .text {
   position: relative;
@@ -35,15 +32,16 @@
 .kings .badge {
   display: inline-block;
   font-size: small;
-  color: white;
+  color: #002147;
+  font-weight: 650;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
+  background-color: #FECB00;
   line-height: 1em;
   position: relative;
   text-align: center;
   left: -1px;
-  top: -4px;
-  height: 1.8em;
+  top: -5px;
+  height: 2em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
   min-width: 22px; 
