@@ -20,6 +20,13 @@
   border-radius: 4px;
   color: white; 
   font-weight: 500; 
+  min-width: 185px;
+}
+.kingface {
+    clear:both;
+    height:185px; 
+    width:185px;
+    
 }
 .kings li:hover {
   left: .1em;

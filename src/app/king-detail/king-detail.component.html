@@ -2,10 +2,7 @@
 
   <h2>{{king.name | uppercase}} Details</h2>
   <div><span>id: </span>{{king.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="king.name" placeholder="name"/>
-    </label>
+  <div style="{'background-image':'url({{king.image}})'}">
   </div>
 
 </div>
