@@ -22,6 +22,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Tour of Bicycle Kings');
+    expect(compiled.querySelector('h1').textContent).toContain('The Bicycle Kings');
   }));
 });

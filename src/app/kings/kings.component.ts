@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { King } from '../king';
-import { KINGS } from '../mock-kings';
+import { KingService } from '../king.service'
+// import { KINGS } from '../mock-kings';
 
 @Component({
   selector: 'app-heroes',
@@ -8,15 +9,20 @@ import { KINGS } from '../mock-kings';
   styleUrls: ['./kings.component.css']
 })
 export class KingsComponent implements OnInit {
-    kings = KINGS; 
+    kings : King[]; 
     selectedKing: King; 
+    
+    getKings(): void {
+      this.kings = this.kingService.getKings();
+    }
     
     onSelect(king: King): void {
         this.selectedKing = king; 
     }
-  constructor() { }
+  constructor(private kingService: KingService) { }
   
   ngOnInit() {
+      this.getKings();
   }
 
 }

@@ -1,8 +1,9 @@
 <div *ngIf="king" class="details">
 
-  <h2>{{king.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{king.id}}</div>
-  <div style="{'background-image':'url({{king.image}})'}">
+  <h2>{{king.name | uppercase}}</h2>
+  <div [style.background-image]="'url(' + king.image + ')'" 
+            style="height: 200px;width:200px;border-radius:50%;background-position:center top;background-size:cover;background-repeat:no-repeat;">
   </div>
+ 
 
 </div>
